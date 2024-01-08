@@ -43,7 +43,7 @@ public class ConcertController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<ConcertResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new product")
+                        .message("Successfully get concert by id")
                         .data(concertResponse)
                         .build());
     }
@@ -54,7 +54,7 @@ public class ConcertController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(CommonResponse.<String>builder()
-                        .message("Successfully created new product")
+                        .message("Successfully deleted Concert")
                         .data("OK")
                         .build());
     }
@@ -65,7 +65,7 @@ public class ConcertController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<ConcertResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new concert")
+                        .message("Successfully updated Concert")
                         .data(concertResponse)
                         .build());
     }

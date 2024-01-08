@@ -27,7 +27,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<CustomerResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new concert")
+                        .message("Successfully created new Customer")
                         .data(customerResponse)
                         .build());
     }
@@ -43,7 +43,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<CustomerResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new product")
+                        .message("Successfully get customer by id")
                         .data(customerResponse)
                         .build());
     }
@@ -54,7 +54,7 @@ public class CustomerController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(CommonResponse.<String>builder()
-                        .message("Successfully created new product")
+                        .message("Successfully deleted customer")
                         .data("OK")
                         .build());
     }
@@ -65,7 +65,7 @@ public class CustomerController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<CustomerResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new concert")
+                        .message("Successfully updated customer")
                         .data(customerResponse)
                         .build());
     }

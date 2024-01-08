@@ -27,7 +27,7 @@ public class TicketController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<TicketResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new concert")
+                        .message("Successfully created new Ticket")
                         .data(ticketResponse)
                         .build());
     }
@@ -43,7 +43,7 @@ public class TicketController {
             return ResponseEntity.status(HttpStatus.CREATED)
                     .body(CommonResponse.<TicketResponse>builder()
                             .statusCode(HttpStatus.CREATED.value())
-                            .message("Successfully created new product")
+                            .message("Successfully get ticket by id")
                             .data(ticketResponse)
                             .build());
     }
@@ -54,7 +54,7 @@ public class TicketController {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(CommonResponse.<String>builder()
-                        .message("Successfully created new product")
+                        .message("Successfully deleted ticket")
                         .data("OK")
                         .build());
     }
@@ -65,7 +65,7 @@ public class TicketController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(CommonResponse.<TicketResponse>builder()
                         .statusCode(HttpStatus.CREATED.value())
-                        .message("Successfully created new concert")
+                        .message("Successfully updated ticket")
                         .data(ticketResponse)
                         .build());
     }
