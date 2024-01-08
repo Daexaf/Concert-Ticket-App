@@ -22,7 +22,9 @@ public class Concert {
     @Column(name = "event_name")
     private String eventName;
     @Column(name = "schedule", nullable = false)
-    private LocalDateTime schedule;
+    private String schedule;
     @Column(name = "venue")
     private String venue;
+    @Column(name = "concert_code")
+    private String concertCode;
 }

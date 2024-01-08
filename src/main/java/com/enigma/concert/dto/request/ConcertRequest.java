@@ -14,8 +14,9 @@ import java.util.List;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class ConcertRequest {
-    private String concertId;
+    private String id;
     private String eventName;
-    private LocalDateTime schedule;
+    private String schedule;
     private String venue;
+    private String concertCode;
 }

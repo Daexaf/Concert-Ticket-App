@@ -22,4 +22,6 @@ public class Customer {
     private String mobilePhone;
     @Column(name = "email", nullable = false, length = 50)
     private String email;
+    @Column(name = "customer_code")
+    private String customerCode;
 }

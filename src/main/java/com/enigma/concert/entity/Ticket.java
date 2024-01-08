@@ -23,7 +23,9 @@ public class Ticket {
     private Integer price;
     @Column(name = "stock", columnDefinition = "int check (stock > 0)")
     private Integer stock;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "concert_id")
     private Concert concert;
+    @Column(name = "ticket_code")
+    private String ticketCode;
 }

@@ -13,8 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class OrderDetailRequest {
-    private String orderDetailId;
-    private Order order;
-    private Ticket ticket;
+//    private String orderId;
+    private String ticketId;
     private Integer quantity;
 }

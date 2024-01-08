@@ -17,6 +17,6 @@ public class TicketResponse {
     private String ticketType;
     private Integer price;
     private Integer stock;
-    private Order order;
-    private Concert concert;
+    private String concertId;
+    private String ticketCode;
 }

@@ -17,4 +17,5 @@ public class ConcertResponse {
     private String eventName;
     private String schedule;
     private String venue;
+    private String concertCode;
 }

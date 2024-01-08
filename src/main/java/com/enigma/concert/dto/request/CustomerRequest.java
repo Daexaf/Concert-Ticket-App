@@ -10,8 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class CustomerRequest {
-    private String customerId;
+    private String id;
     private String name;
     private String mobilePhone;
     private String email;
+    private String customerCode;
 }

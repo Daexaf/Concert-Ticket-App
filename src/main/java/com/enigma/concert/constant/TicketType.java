@@ -15,6 +15,4 @@ public enum TicketType {
     TicketType(String displayName) {
         this.displayName = displayName;
     }
-
-
 }

@@ -9,15 +9,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class OrderResponse {
     private String id;
-    private Customer customer;
+    private Customer customerId;
     private List<OrderDetail> orderDetails;
-    private TicketResponse ticketId;
     private Integer quantity;
 }
